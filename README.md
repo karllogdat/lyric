@@ -1,2 +1,2 @@
-# lyric
-Personal music lyrics viewer
+# Lyric
+Personal Music Lyrics Viewer
