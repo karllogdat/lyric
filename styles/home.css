@@ -47,9 +47,13 @@ h1 {
 }
 
 .song-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     width: 100%;
 
-    padding: 0.5rem clamp(1rem, 5vw, 10vw);
+    padding: 0.5rem clamp(5vw, 10vw, 15vw);
 
     border-radius: 0.5rem;
 }
@@ -62,18 +66,39 @@ h1 {
     background-color: var(--white);
     color: var(--black);
     
-    transform: scale(1.05);
+    transform: scale(1.025);
 
     transition: all 0.25s;
 }
 
-a#title {
+.song-artist {
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+.song-link {
+    font-size: 0.75rem;
+
+    text-decoration: none;
+
+    color: inherit !important;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+a {
     text-decoration: none;
 }
 
-a#title:hover,
-a#title:active,
-a#title:link,
-a#title:visited {
+a:hover,
+a:active,
+a:link,
+a:visited {
     color: #fff;
 }
