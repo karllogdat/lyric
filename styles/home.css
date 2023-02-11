@@ -26,11 +26,45 @@ main {
 
     justify-content: center;
     align-items: center;
+
+    padding: 0 clamp(1rem, 7.5vw, 15vw);
 }
 
 h1 {
     font: bold 2rem 'Poppins', sans-serif;
     color: var(--white);
+}
+
+#songlist {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font: normal 1.25rem 'JetBrains Mono', monospace;
+    color: var(--white);
+}
+
+.song-container {
+    width: 100%;
+
+    padding: 0.5rem clamp(1rem, 5vw, 10vw);
+
+    border-radius: 0.5rem;
+}
+
+.song-container:nth-child(odd) {
+    background-color: var(--black);
+}
+
+.song-container:hover {
+    background-color: var(--white);
+    color: var(--black);
+    
+    transform: scale(1.05);
+
+    transition: all 0.25s;
 }
 
 a#title {

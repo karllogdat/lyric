@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300&display=swap');
 
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url(../fonts/JetBrainsMono-Regular.ttf);
+}
+
 :root {
     /* Colors */
     --black: #02010a;
